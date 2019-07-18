@@ -1,0 +1,13 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: Eureka-Sumer1
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: Eureka-Sumer1
+  client:
+    service-url:
+        defaultZone: http://eureka-server1.com:8081/eureka/,http://eureka-server2.com:8082/eureka/,http://eureka-server3.com:8083/eureka/
